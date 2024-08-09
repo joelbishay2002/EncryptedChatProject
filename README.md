@@ -1,0 +1,7 @@
+Hello. I’m excited to present my capstone project – a secure chat application that blends simplicity with robust encryption to keep our conversations private.
+
+At its core, our application allows two users on a local network to exchange messages in real time. The user interface is straightforward, built with ‘tkinter’, a Python library for creating graphical interfaces. Users are greeted with a clean layout consisting of a text area where the conversation appears, an entry field to type messages, and a simple send button to dispatch them. This simple design ensures that anyone, regardless of their technical expertise, can use our chat system with ease.
+
+The standout feature, however, is our commitment to security. We employ 256-bit RSA encryption, a well-established asymmetric cryptographic algorithm. Each user has a unique pair of keys: a public key, which is shared with others, and a private key, which is kept secret. When you send a message, it’s encrypted with the recipient’s public key, which only their corresponding private key can decrypt. This means that even if someone intercepted our messages, without the private key, they’re just indecipherable text.
+
+What happens under the hood is quite elegant. Upon initiating a chat, each user’s public key is exchanged securely. Messages are then encrypted before leaving the sender’s side and are only decrypted when they arrive at the intended recipient’s machine. This all happens seamlessly, ensuring our conversation remains confidential and secure
